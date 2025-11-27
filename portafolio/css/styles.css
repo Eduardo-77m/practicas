@@ -1,0 +1,821 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+
+:root{
+  --font-primary: 'Work Sans', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+  
+ 
+
+  /* COLORS */
+
+  --color-fondo-header: #707a8a;
+  --color-fondo-main-secction: #4d5466;
+  --color-fondo-footer: #252A2E;
+  --color-texto: #ffff;
+  --color-texto-green: #15ba83;
+  
+  --color-gradient1 : rgba(56, 63, 66, 0.8);
+  --color-gradient2 : rgb(39, 47, 51);
+  
+
+  
+}
+
+[data-theme="ligt"] {
+  /* modo oscuro */
+ --color-fondo-header: #ffffff;
+  --color-fondo-main: #f3f4f6;
+  --color-fondo-footer: #111827;
+  --color-texto: #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Utility Classes */
+
+body,html{
+   
+    scroll-behavior: smooth;
+    font-family: var(--font-primary);
+    color:var(--color-texto);
+    font-size: 1rem;
+    overflow-x: hidden;
+
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 43px;
+}
+h3{
+    font-size: 25px;
+}
+
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    padding: 0 30px;
+    
+}
+
+/* inicio  */
+
+    
+.navbar{
+    
+    background-color:var(--color-fondo-header);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.6);
+    /* border:  solid red; */
+    padding: 14px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+   
+
+   
+}
+.navbar .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar .logo a{
+    font-family: 'Righteous';
+    font-size: 32px;
+    color: var(--color-texto-green);
+    text-decoration: none;
+    
+}
+
+nav a{
+    text-align: none;
+    color:var(--color-texto);
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+     color: var(--color-texto-green);
+}
+
+.nav-responsive{
+    background-color:var(--color-texto-green);
+    color:var(--color-texto);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    
+
+}
+/* seccion inicio */
+.inicio{
+    background: linear-gradient(to top, rgba(56, 63, 66, 0.8), rgb(39, 47, 51)),
+              url("../img/fondo.jpg") center / cover no-repeat;
+  background-attachment: scroll; 
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-color: #272f33;
+  will-change: background-image; 
+
+    
+    
+}
+.display-1{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+
+   gap: 1rem;
+  
+  
+}
+
+.display-1 .text{
+    width: 50%;
+    padding: 10px;
+    
+}
+.display-1 .text span{
+    color: var(--color-texto-green);
+    border-bottom: solid var(--color-texto-green);
+}
+.display-1 .text p{
+    padding: 20px 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+.display-1 .social{
+   display: flex;
+   align-items: center;
+   /* border: solid; */
+   
+   padding: 20px  0;
+   gap: 2.5rem;
+
+}
+.display-1 .social a{
+    color: var(--color-texto);
+    align-items: center;
+    font-size: 20px;
+    transition: .3s;
+
+}
+.display-1 .social a:hover{
+    color: var(--color-texto-green);
+}
+
+
+
+.social .Descargar{
+    background-color:var(--color-texto-green);
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    /* z-index: 10; */
+    cursor: pointer;
+}
+.display-1 .social .Descargar a{
+    /* display: inline-block; */
+    color: var(--color-texto);
+    font-size: 16px;
+    text-decoration: none;
+ 
+
+}
+
+
+
+
+
+.display-1 img{
+    display:block;    
+    border-radius: 100%;
+    margin: auto;
+    width: 75%;
+    
+    
+
+}
+
+
+/* ceccion skills */
+
+.skills{
+    /* border: solid ; */
+    background-color: var(--color-fondo-main-secction);
+    color: var(--color-texto);
+    padding: 50px 20px;
+    /* border: solid rgb(60, 255, 0); */
+     max-height: 100%;
+
+}
+
+
+.skills h2{
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    
+
+}
+.skills .filas h3{
+    text-align: center;
+
+    
+}
+.skills .fila-1{
+    /* border: solid green; */
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+.skills .fila1-wrap{
+    /* border: solid rgb(27, 124, 111); */
+    flex: 1 1 calc(25% - 10px); /* 4 columnas (25% cada una) */
+
+  background:transparent;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  
+  padding: 10px 0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.filas .fila-2 .fila-text{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+
+}
+.filas .fila-2 h3{
+    padding: 20px 0;
+}
+.filas .fila-2 .fila-text h5{
+   
+    padding: 10px 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    border-radius:20px;
+    background: #1e2326;
+}
+
+
+
+
+/* SECCION CURRICULUM */
+.curriculum{
+    background-color:var(--color-fondo-header);
+    padding: 50px 20px;
+}
+
+.curriculum h2{
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid var(--color-texto-green);
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid var(--color-texto-green);
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: var(--color-texto-green);
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: var(--color-texto-green);
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid var(--color-texto-green);
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid var(--color-texto-green);
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: var(--color-texto-green);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--color-texto-green);
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color:var(--color-texto-green);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:var(--color-texto-green);
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/* seccion portafolio */
+.portfolio{
+    background-color: var(--color-fondo-main-secction);
+    padding: 50px 20px;
+    /* height: 100vh; */
+   padding-bottom: 100px;
+
+    
+    
+}
+.portfolio .contenedor{
+    padding-bottom:200px;
+    /* height: 100vh; */
+}
+.portfolio h2{
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(90deg,rgba(21, 186, 131, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay .link{
+    /* border: solid rgb(223, 12, 128); */
+    padding-top: 55px;
+    display: flex;
+    gap: 3rem ;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    
+}
+.portfolio .galeria .proyecto .overlay .link svg{
+   height: 40px;
+   width: 40px;
+   
+}
+.portfolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+
+
+/* SECCION CONTACTO */
+
+
+footer{
+
+position: relative;
+/* background: #33d412; */
+
+
+
+}
+
+.fondo{
+    background-image: url(../img/contact_bg.png);
+    background-color: var(--color-fondo-header);
+    background-size: cover;
+    height: 40vh;
+    
+
+}
+.contacto{
+  
+    
+   
+    
+     width: min(100% - 3rem, 53rem);
+    
+     position:absolute ;
+     
+     left: 50%;
+     transform: translate(-50%, -50%);
+    
+     background-color: rgb(51, 59, 80);
+     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.6);
+     padding:12px;
+
+    
+     align-items: center;
+     gap: 2rem;
+     /* border-radius: 1rem; */
+   
+      
+}
+.fondo .contacto .contenedor{
+    /* border: solid green; */
+    display: flex;
+    gap: 2rem;
+    /* border: solid ; */
+    padding-top: 10px;
+    
+   
+}
+.text-contact{
+    width: 50%;
+}
+.contacto h2{
+    font-size: 28px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 30px 0;
+   
+}
+.text-contact p{
+    padding: 20px 0;
+    line-height: 22px
+}
+
+.text-contact ul{
+    padding-top: 10px;
+    
+}
+.text-contact ul li{
+    list-style: none;
+    padding: 10px 0;
+   
+}
+
+
+
+
+
+.contacto .contenedor .col{
+    /* border:  solid red; */
+    /* width: 100%; */
+    width:50%;
+    margin: 0 auto; 
+    padding: 10px;
+    /* border:  solid ; */
+  
+    
+}
+
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #2e3338;
+    font-size: 15px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    /* border: 2px solid #fff; */
+  
+    width: fit-content;
+  
+   
+    width: 100%;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-texto-green);
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+
+/* footer */
+.main-footer{
+    background: var(--color-fondo-footer);
+    height: 20vh;
+   
+
+}
+.main-footer .arriba{
+    display:inline-block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color:var(--color-texto-green);
+    
+    position: relative;
+    left: 50%;
+    transform: translateX(-50% );
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    color:var(--color-texto);
+    font-size: 18px;   
+}
+
+
+
+.main-footer-text{
+    text-align: center;
+    padding-top: 20px;
+    
+    align-items: center;
+    
+}
+
+
+/* seccion reponsive */
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+
+  .inicio .display-1 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .inicio{
+    height: 100vh;
+    
+    
+  }
+  .display-1 .text{
+    width: 100%;
+  }
+.display-1 .social{
+    
+    display: flex;
+    justify-content: center;
+
+    
+}
+.skills .fila1-wrap {
+    flex: 1 1 calc(50% - 10px); 
+  }
+
+  .inicio .display-1 img{
+    width: 50%;
+  }
+ 
+    
+      .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+    
+     .portfolio .galeria{
+        display: block;
+        width: 100%;
+       
+    }
+    .portfolio{
+        padding-bottom: 250px;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .fondo .contacto .contenedor {
+        display: block;
+        text-align: center;
+        
+    
+        /* border: solid; */
+    }
+    .fondo .text-contact{
+        width: 100%;
+        
+    }
+    .fondo .text-contact h2{
+        padding: 20px 0;
+    }
+    .fondo .text-contact p{
+        padding: 0 ;
+        
+        /* border: solid green; */
+    }
+    .fondo .contacto .col{
+        width: 100%;
+    }
+    .fondo{
+        height: 50vh;
+    }
+
+}
+
+
+/* modo light */
+
+
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffffff;
+    color: #111111;
+  }
+  .navbar{
+    background-color: #e5e7eb;
+  }
+  .navbar a{
+    color: #111;
+  }
+   nav.responsive{
+        background-color: #e5e7eb; 
+    }
+  .inicio{
+     background: linear-gradient(to top, rgba(205, 205, 209, 1) 56%, rgba(229, 231, 235, 1) 100%),
+              url("../img/fondo.jpg") center / cover no-repeat;
+  background-attachment: scroll; 
+  color:#111111;
+  }
+  .skills{
+     background-color: #e5e7eb;
+    color: #111111;
+  }
+  .filas .fila-2 .fila-text h5{
+    background: #27be9e;
+}
+  .curriculum{
+    background-color: #f9fafb;
+  }
+  .curriculum .fila .item{
+    background-color:#e5e7eb;   
+}
+  .portfolio{
+    background-color: #e5e7eb;
+  }
+  footer .fondo {
+    background-color: #f9fafb;
+  }
+  .fondo .contacto{
+    background-color: #e5e7eb;
+  }
+  .contacto .col input, .contacto .col textarea{
+    background-color: #8f9296;
+}
+.contacto button{
+    background-color:var(--color-texto-green);
+    border: none;
+    color: #111;
+   
+}
+  footer .main-footer{
+    background-color: #e5e7eb;
+  }
+
+}
