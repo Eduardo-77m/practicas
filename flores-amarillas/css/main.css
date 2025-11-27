@@ -136,6 +136,7 @@ body {
   --fl-speed: 0.8s;
 }
 .flower--1 {
+  border:  solid red;
   -webkit-animation: moving-flower-1 4s linear infinite;
   animation: moving-flower-1 4s linear infinite;
 }
@@ -169,6 +170,7 @@ body {
   animation: blooming-leaf-left var(--fl-speed) 2s backwards;
 }
 .flower--2 {
+  border:  solid violet;
   left: 50%;
   transform: rotate(20deg);
   -webkit-animation: moving-flower-2 4s linear infinite;
@@ -192,6 +194,7 @@ body {
   animation: blooming-leaf-left var(--fl-speed) 1.5s backwards;
 }
 .flower--2 .flower__line__leaf--4 {
+  border: solid red;
   -webkit-animation: blooming-leaf-left var(--fl-speed) 1.3s backwards;
   animation: blooming-leaf-left var(--fl-speed) 1.3s backwards;
 }
