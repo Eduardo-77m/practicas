@@ -16,8 +16,6 @@ body {
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
-  max-width: 100%;
-  width: 100%;
   /* height: auto; */
 }
 
@@ -113,8 +111,12 @@ body {
     linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
 }
 
-.flowers {
-  position: relative;
+body .flowers {
+  /* border:  solid red; */
+  /* height: 400px;
+  width: 400px; */
+  /* background-color: #1aaa15; */
+  /* position: relative; */
   transform: scale(0.9);
   /*margin-bottom: 100px;
   */
@@ -137,9 +139,10 @@ body {
   transform-origin: bottom center;
   z-index: 10;
   --fl-speed: 0.8s;
+  border: solid red;
 }
 .flower--1 {
-  border:  solid red;
+  /* border:  solid red; */
   -webkit-animation: moving-flower-1 4s linear infinite;
   animation: moving-flower-1 4s linear infinite;
 }
