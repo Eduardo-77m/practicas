@@ -13,7 +13,9 @@
 
     <div class="col-md-6">
       <div class="img-detalle zoom-lupa">
-        <img id="imgProducto" alt="producto">
+        <img id="imgProducto" alt="producto"
+         onclick="abrirZoom(this)">
+        
       </div>
     </div>
 
@@ -35,6 +37,29 @@
 
   </div>
 </div>
+<!-- MODAL ZOOM PRODUCTO -->
+<div id="modalZoom" class="zoom-modal">
+  <span class="zoom-cerrar" onclick="cerrarZoom()">×</span>
+  <img id="zoomImg">
+</div>
+
+
+
+
+<script>
+function abrirZoom(img) {
+  if (window.innerWidth > 768) return; // solo móvil
+
+  document.getElementById("zoomImg").src = img.src;
+  document.getElementById("modalZoom").style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+function cerrarZoom() {
+  document.getElementById("modalZoom").style.display = "none";
+  document.body.style.overflow = "";
+}
+</script>
 
 <script src="data.js"></script>
 <script src="main.js"></script>
