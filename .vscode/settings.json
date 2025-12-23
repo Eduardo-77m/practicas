@@ -1,4 +1,5 @@
 {
     "code-runner.saveAllFilesBeforeRun": false,
-    "code-runner.saveFileBeforeRun": false
+    "code-runner.saveFileBeforeRun": false,
+    "liveServer.settings.port": 5501
 }

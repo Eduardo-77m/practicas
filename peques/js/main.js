@@ -1,41 +1,4 @@
 
-// boton wtsap
-
-
-document.querySelectorAll(".hacer-pedido").forEach(btn => {
-  btn.addEventListener("click", function () {
-
-    const card = btn.closest(".producto-card");
-
-    const producto = card.querySelector(".fw-bold").innerText;
-    const precio = card.querySelector(".price").innerText;
-    const imagen = card.querySelector("img").src;
-
-    // Si quieres cantidad fija:
-    let cantidad = btn.dataset.cantidad || 1;
-
-    const mensaje =
-`Hola, quiero hacer un pedido:
-📦 *Producto:* ${producto}
-🔢 *Cantidad:* ${cantidad}
-💵 *Precio:* ${precio}
-🖼️ *Imagen:* ${imagen}
-
-¿Está disponible?`;
-
-    const numero = "51904435145"; // <-- CAMBIA AQUÍ TU NÚMERO
-
-    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
-    window.open(url, "_blank");
-  });
-});
-
-
-
-
-
-
-
 // Mostrar más productos en móvil
 
 const btn = document.getElementById("btnVerMas");
@@ -79,6 +42,23 @@ btn1.addEventListener("click", () => {
     window.scrollTo({ top: btn1.offsetTop - 200, behavior: "smooth" });
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
