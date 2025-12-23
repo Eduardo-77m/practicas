@@ -169,9 +169,42 @@ body {
 }
 
 
-/* modos de atencion*/
 
 
+/*nodal productos*/
+
+
+
+/* Modal */
+.zoom-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Imagen en zoom */
+.zoom-modal img {
+  max-width: 100%;
+  max-height: 100%;
+  touch-action: pinch-zoom;
+}
+
+/* Botón cerrar */
+.zoom-cerrar {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* metodos de entrega y atencion */
 
 .images {
   /* border: solid violet; */

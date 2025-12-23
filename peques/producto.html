@@ -57,12 +57,16 @@
   </header>
 
 
+  <!-- descripcion de producto -->
+
+
   <div class="container my-5">
     <div class="row g-4 ">
 
       <div class="col-md-6">
         <div class="img-detalle zoom-lupa">
-          <img id="imgProducto" alt="Producto">
+          <img id="imgProducto" alt="Producto"
+           onclick="abrirZoom(this)">
         </div>
       </div>
 
@@ -81,7 +85,14 @@
 
     </div>
   </div>
+<!-- MODAL ZOOM PRODUCTO -->
 
+  <div id="modalZoom" class="zoom-modal">
+  <span class="zoom-cerrar" onclick="cerrarZoom()">×</span>
+  <img id="zoomImg">
+</div>
+
+  <!-- secction footer -->
 
 
   <footer class="" style="background-color:#f2ede8;">

@@ -110,3 +110,18 @@ if (zoomBox && zoomImg) {
 }
 
 
+
+// modal zoom productos
+
+function abrirZoom(img) {
+  if (window.innerWidth > 768) return; // solo móvil
+
+  document.getElementById("zoomImg").src = img.src;
+  document.getElementById("modalZoom").style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+function cerrarZoom() {
+  document.getElementById("modalZoom").style.display = "none";
+  document.body.style.overflow = "";
+}
