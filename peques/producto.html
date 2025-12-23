@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
@@ -15,43 +15,43 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+
   <link rel="stylesheet" href="css/styles.css">
   <title>Detalle del producto</title>
 </head>
 
 <body>
 
-  <header>
+  <header id="inicio">
     <nav class="navbar navbar-light navbar-expand-md bg-body-secondary fixed-top">
-      <a href="index.html#inicio"  style="text-decoration: none; color: inherit;">
+      <a href="index.html#inicio" style="text-decoration: none; color: inherit;">
 
         <div class="container">
           <div class="logo d-flex">
-            
-            
+
+
             <img src="./images/logo88.png" style="height: 60px;" alt="">
             <div class="d-flex flex-column align-items-center  ">
               <h1 class="logo-title my-0 py-0 ">PEQUE'S</h1>
               <h2 class="logo-slogan mt-0 pt-0 ">moda infantil</h2>
             </div>
           </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="index.html#inicio">Inicio</a>
-            <a class="nav-link" href="index.html#Niños">Niños</a>
-            <a class="nav-link" href="index.html#Bebes">Bebes </a>
-            <a class="nav-link" href="index.html#nosotros ">Nosostros</a>
-            <a class="nav-link" href="index.html#nosotros">Contactanos</a>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" aria-current="page" href="index.html#inicio">Inicio</a>
+          <a class="nav-link" href="index.html#Niños">Niños</a>
+          <a class="nav-link" href="index.html#Bebes">Bebes </a>
+          <a class="nav-link" href="index.html#nosotros ">Nosostros</a>
+          <a class="nav-link" href="index.html#nosotros">Contactanos</a>
 
 
-          </div>
         </div>
+      </div>
       </div>
     </nav>
   </header>
@@ -65,8 +65,7 @@
 
       <div class="col-md-6">
         <div class="img-detalle zoom-lupa">
-          <img id="imgProducto" alt="Producto"
-           onclick="abrirZoom(this)">
+          <img id="imgProducto" alt="Producto" onclick="abrirZoom(this)">
         </div>
       </div>
 
@@ -85,12 +84,12 @@
 
     </div>
   </div>
-<!-- MODAL ZOOM PRODUCTO -->
+  <!-- MODAL ZOOM PRODUCTO -->
 
   <div id="modalZoom" class="zoom-modal">
-  <span class="zoom-cerrar" onclick="cerrarZoom()">×</span>
-  <img id="zoomImg">
-</div>
+    <span class="zoom-cerrar" onclick="cerrarZoom()">×</span>
+    <img id="zoomImg">
+  </div>
 
   <!-- secction footer -->
 
@@ -107,25 +106,33 @@
             esten comodos y ala moda.
             Diseños unicos y actuales para que tu bebe sea mas elegante, atencion al cliente personalizado. </p>
 
+
+
+          <!-- secction redes socilaes -->
+
           <div class="redes py-4  d-flex gap-3">
-            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="200" height="200"
-              viewBox="-143 145 512 512">
-              <path
-                d="M113 145c-141.4 0-256 114.6-256 256s114.6 256 256 256 256-114.6 256-256-114.6-256-256-256zm159.8 415.7c-20.8 20.8-44.9 37.1-71.8 48.4-27.8 11.8-57.4 17.7-88 17.7-30.5 0-60.1-6-88-17.7-26.9-11.4-51.1-27.7-71.8-48.4-20.8-20.8-37.1-44.9-48.4-71.8C-107 461.1-113 431.5-113 401s6-60.1 17.7-88c11.4-26.9 27.7-51.1 48.4-71.8 20.9-20.8 45-37.1 71.9-48.5C52.9 181 82.5 175 113 175s60.1 6 88 17.7c26.9 11.4 51.1 27.7 71.8 48.4 20.8 20.8 37.1 44.9 48.4 71.8 11.8 27.8 17.7 57.4 17.7 88 0 30.5-6 60.1-17.7 88-11.4 26.9-27.7 51.1-48.4 71.8z" />
-              <path
-                d="M146.8 313.7c10.3 0 21.3 3.2 21.3 3.2l6.6-39.2s-14-4.8-47.4-4.8c-20.5 0-32.4 7.8-41.1 19.3-8.2 10.9-8.5 28.4-8.5 39.7v25.7H51.2v38.3h26.5v133h49.6v-133h39.3l2.9-38.3h-42.2v-29.9c0-10.3 9.2-14 19.5-14z" />
-            </svg>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path
+                  d="M30.996 16.091C30.995 7.81 24.282 1.097 16 1.097S1.004 7.811 1.004 16.093c0 7.455 5.44 13.639 12.566 14.8l.086.012V20.427H9.848v-4.336h3.808v-3.302a5.293 5.293 0 0 1 5.684-5.834l-.018-.001c1.199.017 2.359.123 3.491.312l-.134-.019v3.69h-1.892a2.168 2.168 0 0 0-2.444 2.351l-.001-.009v2.812h4.159l-.665 4.336h-3.494v10.478c7.213-1.174 12.653-7.359 12.654-14.814z" />
+              </svg>
+            </a>
+
+             <a href="">
 
             <svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
-                <title>tiktok</title>
                 <path
                   d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z">
                 </path>
               </g>
             </svg>
+          </a>
+
+
+            <a href="">
 
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -142,6 +149,9 @@
                   fill="#0F0F0F"></path>
               </g>
             </svg>
+          </a>
+            <a href="">
+
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
               <g fill="#0F0F0F">
                 <path
@@ -151,7 +161,7 @@
                   clip-rule="evenodd" />
               </g>
             </svg>
-
+          </a>
           </div>
 
         </div>
