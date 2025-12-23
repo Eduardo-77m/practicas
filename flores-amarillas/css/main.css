@@ -22,7 +22,7 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: var(--dark-color);
-
+  overflow: hidden;
   perspective: 1000px;
   /* max-width: 100%;
   width: 100%; */

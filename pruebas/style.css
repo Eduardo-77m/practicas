@@ -1,0 +1,54 @@
+.producto-card {
+  height: 400px;
+  cursor: pointer;
+}
+
+.img-card {
+  height: 220px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DETALLE */
+.img-detalle {
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-detalle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .15s ease;
+}
+
+.zoom-lupa:hover img {
+  transform: scale(2);
+}
+
+.zoom-lupa {
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+
+.zoom-lupa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.15s ease;
+  transform-origin: 50% 50%;
+}
+
+/* activa el zoom */
+.zoom-lupa:hover img {
+  transform: scale(2);
+}
