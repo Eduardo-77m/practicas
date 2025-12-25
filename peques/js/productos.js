@@ -7,7 +7,7 @@ document.addEventListener('click', function (e) {
 
   e.preventDefault();
 
-  const card = btn.closest('.producto-card');
+  const card = btn.closest('.producto-card-box');
 
   const nombre = card.dataset.nombre;
   const precio = card.dataset.precio;
@@ -73,7 +73,7 @@ if (window.location.pathname.includes("producto.html")) {
     document.getElementById("descripcion").textContent = p.descripcion;
     document.getElementById("imgProducto").src = p.img;
 
-    const card = document.querySelector('.producto-card');
+    const card = document.querySelector('.producto-card-box');
     card.dataset.nombre = p.nombre;
     card.dataset.precio = p.precio;
   }
@@ -82,7 +82,7 @@ if (window.location.pathname.includes("producto.html")) {
 
 
 
-
+// zooom lupa de detalle de producto
 
 
 const zoomBox = document.querySelector('.zoom-lupa');
