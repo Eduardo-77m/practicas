@@ -22,6 +22,7 @@
   height: 400px;
   overflow: hidden;
   border-radius: 10px;
+ 
 }
 
 .img-detalle img {
@@ -29,6 +30,17 @@
   height: 100%;
   object-fit: cover;
   transition: transform .15s ease;
+  /* display: block;
+  transform-origin: center center;
+  user-select: none;
+  -webkit-user-drag: none; */
+}
+
+
+@media (max-width: 768px) {
+  .zoom-lupa {
+    touch-action: none;
+  }
 }
 
 .zoom-lupa:hover img {
