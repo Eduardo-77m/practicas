@@ -137,17 +137,21 @@ body {
 
 .img-detalle {
   /* border: solid green; */
+  width: 100%;
   height: 400px;
   overflow: hidden;
+  
   border-radius: 10px;
+   touch-action: none; /
 }
 
 .img-detalle img {
   /* border: solid red; */
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform .15s ease;
+  object-fit: contain;
+  user-select: none;  
+
 }
 
 
@@ -160,8 +164,10 @@ body {
 .zoom-lupa img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.2s ease;
+  object-fit: contain;
+  /* transition: transform 0.2s ease; */
+  transform-origin: 0 0; /* no desde el centro */
+  cursor: grab;
 }
 
 .zoom-lupa:hover img {
