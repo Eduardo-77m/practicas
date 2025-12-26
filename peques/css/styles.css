@@ -42,7 +42,7 @@
 }
 
 .navbar {
-  background-color: #f2ede8;
+  background: #f2ede8 !important;
   top: 0;
   z-index: 99;
 }
@@ -88,7 +88,7 @@ body {
 
 
 .producto-card {
-  border: solid red; 
+  /* border: solid red;  */
 
   /* height: 400px; */
   height: 100%;
