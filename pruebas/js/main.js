@@ -9,7 +9,7 @@ document.addEventListener('click', function (e) {
 
   e.preventDefault();
 
-  const card = btn.closest('.producto-card');
+  const card = btn.closest('.producto-card, .producto-card-box');
 
   const nombre = card.dataset.nombre;
   const precio = card.dataset.precio;
@@ -55,7 +55,7 @@ document.addEventListener('click', function (e) {
   // 👉 CLICK EN CARD (CATÁLOGO)
   const card = e.target.closest('.producto-card');
   if (card && card.dataset.id) {
-    window.location.href = `producto.html?id=${card.dataset.id}`;
+    window.location.href = `/product/producto.html?id=${card.dataset.id}`;
   }
 });
 
@@ -64,7 +64,7 @@ document.addEventListener('click', function (e) {
 
 
 // CARGAR PRODUCTO EN producto.html
-if (window.location.pathname.includes("producto.html")) {
+if (window.location.pathname.includes("/product/producto.html")) {
 
   const id = new URLSearchParams(window.location.search).get("id");
   const p = productos[id];

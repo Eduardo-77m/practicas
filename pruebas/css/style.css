@@ -1,4 +1,5 @@
 .producto-card {
+  border: solid red;
   height: 400px;
   cursor: pointer;
 }
@@ -16,7 +17,8 @@
 }
 
 /* DETALLE */
-.img-detalle {
+.img-detalle  {
+  border: solid green;
   height: 400px;
   overflow: hidden;
   border-radius: 10px;
