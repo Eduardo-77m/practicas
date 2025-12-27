@@ -1,3 +1,4 @@
+console.log("productos.js cargado ✅");
 const telefono = "51915177144";
 
 document.addEventListener('click', function (e) {
@@ -7,7 +8,7 @@ document.addEventListener('click', function (e) {
 
   e.preventDefault();
 
-  const card = btn.closest('.producto-card-box');
+  const card = btn.closest('.producto-card, .producto-card-box');
 
   const nombre = card.dataset.nombre;
   const precio = card.dataset.precio;
@@ -53,7 +54,7 @@ document.addEventListener('click', function (e) {
   // 👉 CLICK EN CARD (CATÁLOGO)
   const card = e.target.closest('.producto-card');
   if (card && card.dataset.id) {
-    window.location.href = `/product/producto.html?id=${card.dataset.id}`;
+    window.location.href = `./product/producto.html?id=${card.dataset.id}`;
   }
 });
 

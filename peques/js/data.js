@@ -1,3 +1,4 @@
+console.log("data.js cargado ✅");
 const productos = {
 
   // secction niños
