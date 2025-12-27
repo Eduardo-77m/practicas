@@ -1,4 +1,4 @@
-console.log("productos.js cargado ✅");
+// console.log("productos.js cargado ✅");
 const telefono = "51915177144";
 
 document.addEventListener('click', function (e) {
@@ -126,3 +126,11 @@ function cerrarZoom() {
   document.getElementById("modalZoom").style.display = "none";
   document.body.style.overflow = "";
 }
+
+
+
+
+
+// seccion de años
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
