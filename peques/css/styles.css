@@ -14,6 +14,7 @@
   --color-fondo-footer: #f2ede8;
   --color-texto: #ffff;
   --color-texto-botton: #d1dfda;
+  --color-texto-botton2: #9bc3c5;
 
 
 
@@ -152,7 +153,17 @@ header .collapse a:hover{
   overflow: hidden;
   border-radius: 6px;
 }
+.btn{
+  color: #fff;
+  font-family: var(--font-primary);
+  border: var(--color-texto-botton2);
+  background: var(--color-texto-botton2);
+}
 
+.btn:hover{
+  background: #92d0d3;
+  /* transform: scale(1.1); */
+}
 .img-card img {
   /* border: solid red; */
   width: 100%;
@@ -303,6 +314,7 @@ font-weight: 600;
 }
 .redes svg:hover{
   transform: scale(1.1);
+
 }
 
 /* botom watsap */
