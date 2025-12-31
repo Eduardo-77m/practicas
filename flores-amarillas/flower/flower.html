@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="img/flores.png" type="image/x-icon" />
-    <title>Flower</title>
-  </head>
-  <body class="container">
-    <audio  id="musicaFondo" loop>
-      <source src="sound/wedding-romantic-love-music-409293.mp3" type="audio/mpeg">
-    </audio>
-    
-    
-    <div id="lyrics">
-     
-    </div>
-    <h1 class="titulo">Estas flores amarillas son un reflejo de la alegría que traes a mi vida. <br>
-      Gracias por iluminar mis días con tu presencia.</h1>
-  
-    <div class="night"></div>
-    <div class="flowers-wrapper">
 
-      <div class="flowers">
-        <div class="flower flower--1">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="icon" href="img/flores.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <title>Flower</title>
+</head>
+
+<body class="container">
+  <audio id="musicaFondo" loop>
+    <source src="sound/wedding-romantic-love-music-409293.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <div id="lyrics">
+
+  </div>
+  <h1 class="titulo">Estas flores amarillas son un reflejo de la alegría que traes a mi vida. <br>
+    Gracias por iluminar mis días con tu presencia.</h1>
+
+  <div class="night"></div>
+  <div class="flowers-wrapper">
+
+    <div class="flowers">
+      <div class="flower flower--1">
         <div class="flower__leafs flower__leafs--1">
           <div class="flower__leaf flower__leaf--1"></div>
           <div class="flower__leaf flower__leaf--2"></div>
@@ -145,53 +149,37 @@
           <div class="leaf"></div>
         </div>
       </div>
-      
+
       <div class="grow-ans" style="--d: 2.8s">
         <div class="flower__g-right flower__g-right--2">
           <div class="leaf"></div>
         </div>
       </div>
-      
+
       <div class="grow-ans" style="--d: 2.8s">
         <div class="flower__g-front">
-          <div
-          class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--1"
-          >
-          <div class="flower__g-front__leaf"></div>
-        </div>
-        <div
-            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--2"
-          >
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--1">
             <div class="flower__g-front__leaf"></div>
           </div>
-          <div
-            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--3"
-          >
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--2">
             <div class="flower__g-front__leaf"></div>
           </div>
-          <div
-            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--4"
-          >
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--3">
             <div class="flower__g-front__leaf"></div>
           </div>
-          <div
-            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--5"
-          >
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--4">
             <div class="flower__g-front__leaf"></div>
           </div>
-          <div
-            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--6"
-          >
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--5">
             <div class="flower__g-front__leaf"></div>
           </div>
-          <div
-            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--7"
-          >
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--6">
             <div class="flower__g-front__leaf"></div>
           </div>
-          <div
-            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--8"
-          >
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--7">
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--8">
             <div class="flower__g-front__leaf"></div>
           </div>
           <div class="flower__g-front__line"></div>
@@ -241,7 +229,7 @@
           <div class="leaf leaf--3"></div>
         </div>
       </div>
-      
+
       <div class="long-g long-g--2">
         <div class="grow-ans" style="--d: 4s">
           <div class="leaf leaf--0"></div>
@@ -316,7 +304,7 @@
           <div class="leaf leaf--3"></div>
         </div>
       </div>
-      
+
       <div class="long-g long-g--7">
         <div class="grow-ans" style="--d: 3s">
           <div class="leaf leaf--0"></div>
@@ -333,7 +321,11 @@
       </div>
     </div>
   </div>
-    <script src="js/anim.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="../js/anim.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
 </html>
