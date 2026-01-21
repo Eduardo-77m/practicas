@@ -10,31 +10,31 @@ const productos = {
     img: "../images/baby4.jpg"
   },
   2: {
-    nombre: "Producto 2",
+    nombre: "Producto 222",
     precio: "S/ 45.00",
     descripcion: "Descripción completa del producto 2",
     img: "../images/bebeebbe.jpg"
   },
    3: {
-    nombre: "Producto 3",
+    nombre: "Producto 32233",
     precio: "S/ 45.00",
     descripcion: "Descripción completa del producto 3",
     img: "../images/bebeebbe.jpg"
   },
    4: {
-    nombre: "Producto 4",
+    nombre: "Producto 444",
     precio: "S/ 45.00",
     descripcion: "Descripción completa del producto 4",
     img: "../images/bebeebbe.jpg"
   },
      5: {
-    nombre: "Producto 5",
+    nombre: "Producto 555",
     precio: "S/ 45.00",
     descripcion: "Descripción completa del producto 5",
     img: "../images/bebeebbe.jpg"
   },
      6: {
-    nombre: "Producto 6",
+    nombre: "Producto 6666",
     precio: "S/ 45.00",
     descripcion: "Descripción completa del producto 6",
     img: "../images/bebeebbe.jpg"
